@@ -1,0 +1,143 @@
+.wrapper {
+  display: flex;
+}
+
+.main {
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+.main-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header-left {
+  /* border: 1px solid green; */
+  font-size: 36px;
+  color: #333;
+}
+.main-header-right a {
+  /* border: 1px solid darkred; */
+  padding: 20px;
+  color: darkred;
+  text-decoration: none;
+}
+
+.messages {
+  height: calc(100vh - 190px);
+  background-color: #FAFAFA;
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+.message {
+  /* border: 1px solid red; */
+  padding: 10px 0;
+}
+.message-box {
+  display: flex;
+}
+.message-name {
+  font-size: 16px;
+  color: #434A54;
+  margin-right: 10px;
+}
+.message-date {
+  font-size: 12px;
+  color: #999;
+}
+.message-content {
+  font-size: 14px;
+  color: #434A54;
+  margin: 10px 0 40px;
+}
+
+.form {
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 40px;
+  display: flex;
+  box-sizing: border-box;
+}
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  margin-right: 15px;
+}
+.form-content {
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.send {
+  font-size: 16px;
+  color: white;
+  background-color: #38AEF0;
+  /* display: block; */
+  padding: 0 20px;
+  border: none;
+  height: 50px;
+}
+
+.side-bar {
+  width: 300px;
+  background-color: #253141;
+  /* border: 1px solid blue; */
+}
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-bar-header-left {
+  /* border: 1px solid green; */
+}
+.side-bar-header-left a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+.side-bar-header-right {
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+.side-bar-header-right a {
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.rooms {
+  background-color: #2F3E51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+.room {
+  /* border: 1px solid red; */
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  color: white;
+  text-decoration: none;
+}
