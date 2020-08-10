@@ -23,21 +23,21 @@
 - has_many :messages
 
 ## room_usersテーブル
-|   Column   | Type   | Options                       |
-| ---------- | ------ | ----------------------------- |
-| user       | string | null: false, foreign_key: true|
-| room       | string | null: false, foreign_key: true|
+|   Column   | Type       | Options                       |
+| ---------- | ---------- | ----------------------------- |
+| user       | references | null: false, foreign_key: true|
+| room       | references | null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :room
 
 ## messagesテーブル
-|   Column   | Type   | Options                       |
-| ---------- | ------ | ----------------------------- |
-| content    | string | null: false,                  |
-| user       | string | null: false, foreign_key: true|
-| room       | string | null: false, foreign_key: true|
+|   Column   | Type       | Options                       |
+| ---------- | ---------- | ----------------------------- |
+| content    | string     | null: false,                  |
+| user       | references | null: false, foreign_key: true|
+| room       | references | null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
